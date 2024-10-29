@@ -1,11 +1,11 @@
 FROM ubuntu:latest
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /data
 
 COPY resume/ .
 
-RUN apt-get update -qy
-RUN apt-get install -qy texlive-xetex texlive-fonts-recommended texlive-fonts-extra
+RUN apt update -qy
+RUN apt install -qy texlive-xetex texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
 
 CMD ["/bin/sh"]

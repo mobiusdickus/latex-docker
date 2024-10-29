@@ -1,0 +1,242 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add more icon options 
+% 4. Fix hacky left alignment on contact line
+% 5. Remove Hacky fix for awkward extra vertical space
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Colin}{Chan}{Software \& Platform Engineer}
+{
+  \contactline
+  {\href{https://ctchan.me}{ctchan.me}}
+  {Astoria, NY}
+  {\href{mailto:colin@ctchan.me}{colin@ctchan.me}}
+  {646-409-2163}
+  {\href{https://www.github.com/mobiusdickus}{mobiusdickus}}
+  {\href{https://www.linkedin.com/in/colin-th-chan/}{colin-th-chan}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.70\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{GoodLynx Inc.}
+\descript{| Head of Engineering }
+\location{August 2023 – Current | New York, NY}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item Leading a cross-functional engineering team to develop, deploy, and scale core product, aligning technical strategy with business goals.
+\item Architected a secure, scalable GCP-based infrastructure and implemented robust, modular codebase through strategic technical decisions.
+\item Built and led a growing engineering team, fostering collaboration while successfully managing and delivering stakeholder expectations.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Potato Inc.}
+\descript{| Senior Software Engineer }
+\location{March 2021 – August 2023 | New York, NY}
+\begin{tightemize}
+\sectionsep
+\item Developed and deployed Python-based APIs, microservices, and testing suites for web apps, optimizing productivity and reducing operational overhead.
+\item Engineered scalable, client-facing applications using Typescript, Angular, RxJS, and Docker/Kubernetes, leveraging GCP for deployment and infrastructure management.
+\item Collaborated with clients and stakeholders, producing design documentation, POCs, and setting engineering goals to support client and internal projects.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Propellr LLC}
+\descript{| Lead Backend Engineer ← Software Engineer }
+\location{April 2016 – March 2021 | New York, NY}
+\begin{tightemize}
+\sectionsep
+\item Developed and maintained a Python/Flask API with PostgreSQL, managing testing, QA, and data modeling, while reducing AWS cloud costs by 35\%.
+\item Led service deployments with Ansible and integrated tech stacks during a merger with a partnering company.
+\item Collaborated with internal teams to set engineering goals and was promoted to Lead Backend Engineer after 2.5 years.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{CA Technologies}
+\descript{| Support Engineer }
+\location{September 2015 - April 2016 | New York, NY}
+\begin{tightemize}
+\sectionsep
+\item Troubleshot and resolved system/software issues, delivering root cause analyses and software patches.
+\item Customized proprietary software to meet client-specific needs and requirements.
+\item Provided on-call support, initializing virtual machines and assisting clients via email and phone.
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Taste Crème}
+\descript{| Co-Owner}
+\begin{tightemize}
+\item Local bake shop located in Long Island City, NY specializing in beautifully crafted and delicious custom cakes. Opened in 2019.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{1‑800Accountant}
+\descript{| Tax Planner}
+\begin{tightemize}
+\item A Flask and Vue.js web app in Docker that captures form data, stores it in a Google Sheet, merges it with a Google Doc, and exports it as a downloadable PDF.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Stony Brook University}
+\descript{| AV Services Equipment Database}
+\begin{tightemize}
+\item An organized method of tracking and sorting information about the AV services equipment reservation system at Stony Brook Univer‑
+sity.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2020	     & Finalist & Lorem Ipsum\\
+% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
+% 2015	     & Finalist  & Cras posuere\\
+% \\
+% \end{tabular}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\sectionsep
+\location{Proficient:}
+Python \textbullet{} Javascript \textbullet{} SQL \textbullet{} \\
+Shell \textbullet{} HTML \textbullet{} CSS  \\
+\sectionsep
+\location{Familiar:}
+Go \textbullet{} C++ \textbullet{} Java \\
+\sectionsep
+\sectionsep
+\subsection{Libraries/Frameworks}
+\sectionsep
+Flask \textbullet{} Django \textbullet{} FastAPI \textbullet{}  \\
+Node \textbullet{} React \textbullet{} Next \textbullet{} Angular \textbullet{} Vue \textbullet{} Express \\
+\sectionsep
+\sectionsep
+\subsection{Tools/Platforms}
+\sectionsep
+Docker \textbullet{} Kubernetes \textbullet{} GCP \textbullet{} \\
+AWS \textbullet{} Terraform \textbullet{} Ansible \textbullet{} \\
+PostgreSQL \textbullet{} MongoDB \textbullet{} Redis \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{Stony Brook University}
+\descript{Bachelors of Science in Information Systems}
+\location{2015 | Stony Brook, NY}
+Specialization in Network and Systems Administration \\
+
+\sectionsep
+\subsection{Stuyvesant High School}
+\descript{High School Diploma}
+\location{2009 | Manhattan, NY}
+AP Computer Science \\
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     REFERENCES
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{References} 
+\href{https://www.linkedin.com/in/alex-beck-07095793/}{\textbf{Alex Beck}, CEO / Co-Founder, GoodLynx Inc.}
+\begingroup
+\setbox0=\hbox{
+\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} beck@goodlynx.com
+}
+\parbox{\wd0}{\box0}
+\endgroup
+\\
+\sectionsep
+\href{https://www.linkedin.com/in/peter-valdez/}{\textbf{Peter Valdez}}, Senior DevOps Engineer, Book of the Month 
+\\
+\begingroup
+\setbox0=\hbox{
+\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} ptr.vldz@gmail.com
+}
+\parbox{\wd0}{\box0}
+\endgroup
+\\
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     END
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
