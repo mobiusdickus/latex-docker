@@ -166,20 +166,20 @@ Last Updated on \today
 \newcommand{\namesection}[4]{
 \RaggedRight{
 \color{title}
-\fontsize{35pt}{45pt}
+\fontsize{32pt}{42pt}
 \fontspec[Path = \pathtitlefont]{\firstnamefont}\selectfont #1 
 \fontspec[Path = \pathtitlefont]{\secondnamefont}\selectfont #2
-} \\[5pt]
+} \\[3pt]
 
 \noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
 \vspace{-15pt}
 
-\RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{13pt}{13pt}\selectfont #3}
+\RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{11pt}{11pt}\selectfont #3}
 
 \noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
 \vspace{-15pt}
 
-\RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{9pt}{13pt}\selectfont #4}
+\RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{9pt}{9pt}\selectfont #4}
 
 \noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
 \vspace{-25pt}
