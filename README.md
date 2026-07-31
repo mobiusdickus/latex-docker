@@ -48,3 +48,14 @@ The exported files are:
 
 Stop or remove the build container with `make stop` or `make clean`,
 respectively.
+
+## License
+
+Project code and documentation are available under the Apache License 2.0.
+Personal resume content is all rights reserved, and third-party assets remain
+under their respective licenses. See [LICENSE.md](LICENSE.md) for details.
+
+The resume contact icons are provided by [Icons8](https://icons8.com/) and are
+used under its attribution-based free license. Template provenance and
+third-party licensing details are documented in
+[`templates/README.md`](templates/README.md).
