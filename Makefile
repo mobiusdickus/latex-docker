@@ -10,6 +10,15 @@ resume:
 	docker cp latex-docker-1:/data/resume.pdf .
 	open resume.pdf
 
+resume-em:
+	docker exec latex-docker-1 xelatex -jobname=resume-em PlushCV-em.tex
+	docker cp latex-docker-1:/data/resume-em.pdf .
+	open resume-em.pdf
+
+export:
+	cp resume/resume.pdf "$(HOME)/Desktop/colin-chan-resume.pdf"
+	cp resume/resume-em.pdf "$(HOME)/Desktop/colin-chan-resume-em.pdf"
+
 run:
 	@if docker ps -f name=latex-docker-1 --format '{{.Names}}' | grep -q latex-docker-1; then \
 		docker exec latex-docker-1 xelatex -jobname=resume PlushCV.tex; \
